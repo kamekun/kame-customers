@@ -1,0 +1,50 @@
+{
+    "name": "kamekun/kame-customers",
+    "license": "MIT",
+    "type": "package",
+    "description": "Customers Module for KaMe a simple laravel CMS",
+    "keywords": [
+        "laravel",
+        "cms",
+        "crm",
+        "livewire",
+        "kame-customers"
+    ],
+    "authors": [
+        {
+            "name": "KaMeKuN",
+            "email": "kame.laravel@gmail.com",
+            "homepage": "https://github.com/kame"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "livewire/livewire": "2.*",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "laravel/framework": "^7.0|^8.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "KameCustomers\\": "src/"
+        }      
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "extra": {
+        "kamekun": {
+            "providers": [
+                "KameCustomers\\KameCustomersServiceProvider"
+            ],
+            "aliases": {
+                "KameCustomers": "KameCustomers\\KameCustomersFacade"
+            }
+        }
+    }
+}
